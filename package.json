@@ -1,0 +1,27 @@
+{
+  "name": "mobilify",
+  "version": "0.0.1",
+  "description": "Wordpress mirror API",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon --harmony server.js",
+    "fetch-posts": "node --harmony ./src/tasks/fetchPosts.js",
+    "test": "echo 0"
+  },
+  "dependencies": {
+    "co": "^4.1.0",
+    "co-monk": "^1.0.0",
+    "co-request": "^0.2.0",
+    "koa": "~0.15.0",
+    "koa-body-parser": "^1.1.0",
+    "koa-logger": "^1.2.2",
+    "koa-qs": "~1.0.1",
+    "koa-router": "^3.8.0",
+    "lodash": "^3.0.1",
+    "monk": "^0.9.1",
+    "qs": "~2.3.3"
+  },
+  "devDependencies": {
+    "nodemon": "^1.3.6"
+  }
+}

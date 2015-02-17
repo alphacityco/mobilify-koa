@@ -3,6 +3,9 @@
   "version": "0.0.1",
   "description": "Wordpress mirror API",
   "main": "server.js",
+  "engines": {
+    "node": "0.11.14"
+  },
   "scripts": {
     "start": "nodemon --harmony server.js",
     "fetch-posts": "node --harmony ./src/tasks/fetchPosts.js",

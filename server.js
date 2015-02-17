@@ -1,7 +1,6 @@
-process.env.NODE_ENV = process.env.NODE_ENV || 'development';
-
 var app  = require('./src');
-var port = process.env.PORT || 3000;
+var config = require('./src/config');
 
-app.listen(port);
-console.log('Koa listening on port ' + port);
+app.listen(config.app.port, function(){
+  console.log('Koa listening on port ' + config.app.port);
+});

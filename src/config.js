@@ -16,4 +16,5 @@ var config = {
   db:        dbConfig,
   wordpress: wordpressConfig
 };
+
 module.exports = config;

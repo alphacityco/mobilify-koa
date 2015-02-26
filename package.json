@@ -7,8 +7,8 @@
     "node": "0.11.14"
   },
   "scripts": {
-    "start": "nodemon --harmony server.js",
-    "fetch-posts": "node --harmony ./src/tasks/fetchPosts.js",
+    "start": "nodemon --harmony ./src",
+    "fetch-posts": "node --harmony ./tasks/fetchPosts.js",
     "test": "echo 0"
   },
   "dependencies": {

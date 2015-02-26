@@ -1,3 +1,5 @@
+require('newrelic');
+
 var app    = require('./src');
 var config = require('./src/config');
 

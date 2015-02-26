@@ -23,6 +23,7 @@
     "koa-router": "^3.8.0",
     "lodash": "^3.0.1",
     "monk": "^0.9.1",
+    "newrelic": "^1.17.0",
     "qs": "~2.3.3"
   },
   "devDependencies": {

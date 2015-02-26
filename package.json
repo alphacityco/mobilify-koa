@@ -2,12 +2,12 @@
   "name": "mobilify",
   "version": "0.0.1",
   "description": "Wordpress mirror API",
-  "main": "server.js",
+  "main": "app.js",
   "engines": {
     "node": "0.11.14"
   },
   "scripts": {
-    "start": "nodemon --harmony ./src",
+    "start": "nodemon --harmony app.js",
     "fetch-posts": "node --harmony ./tasks/fetchPosts.js",
     "test": "echo 0"
   },

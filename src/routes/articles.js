@@ -6,17 +6,18 @@ function articlesRoutes(db) {
 
     index: function *(){
 
-      var articles = yield db.articles.find({});
+      // var articles = yield db.articles.find({});
 
-      if (articles && articles.length) {
-        this.body = articles;
-      }
-      else {
-        this.status = 404;
-        this.body = {
-          error: 'not found'
-        };
-      }
+      // if (articles && articles.length) {
+      //   this.body = articles;
+      // }
+      // else {
+      //   this.status = 404;
+      //   this.body = {
+      //     error: 'not found'
+      //   };
+      // }
+      this.body = "<b>Hello world!</b>";
     }
 
   };

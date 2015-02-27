@@ -4,7 +4,7 @@
   "description": "Wordpress mirror API",
   "main": "app.js",
   "engines": {
-    "node": "0.11.14"
+    "node": "0.11.16"
   },
   "scripts": {
     "start": "nodemon --harmony app.js",

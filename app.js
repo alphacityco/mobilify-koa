@@ -7,9 +7,10 @@ var cluster = require('cluster');
 var numCPUs = require('os').cpus().length;
 
 if (cluster.isMaster) {
+  console.log("[CLUSTER] Starting cluestering with " + numCPUs + " cores");
 
   cluster.on('listening', function(worker, address) {
-    console.log("A worker is now connected to " + address.address + ":" + address.port);
+    console.log("[CLUSTER] A worker is now connected to " + address.address + ":" + address.port);
   });
 
   // Fork workers.
@@ -18,7 +19,7 @@ if (cluster.isMaster) {
   }
 
   cluster.on('exit', function(worker, code, signal) {
-    console.log('A worker died at: ' + worker.process.pid);
+    console.log('[CLUSTER] A worker died at: ' + worker.process.pid);
   });
 
 } else {
